@@ -99,6 +99,7 @@
           display: flex;
           flex-direction: column;
 
+
           .title_in{
             .in_link {
               font-weight: 800;
@@ -509,9 +510,11 @@
   margin: 0 auto;
   margin-top: 130px;
   padding: 0;
+  max-width: 25%;
+  position: relative;
 }
 .modal-content{
-  background-color: rgba(252, 211, 87, 0.82);
+  background-color: #fff;
   padding: 0 18px;
   box-shadow: 0px 0px 3px #848484;
 }
@@ -545,27 +548,36 @@
   left: 28px;
   padding-top: 4px;
 }
+.form-group:nth-child(2)::before{
+  content: "\f0e0";
+}
+.form-group:nth-child(3)::before{
+  content: "\f023";
+}
 
 .form-group:last-of-type::before{
   content: "\f023";
-
 }
 
 button{
   width: 40%;
   margin: 5px 0 25px;
 }
+.btn_reg{
+  width: 80%;
+  display: flex;
 
+}
 .btn{
-  background-color: #27c2a5;
+  background-color: #f1c010;
   font-size: 19px;
   padding: 7px 14px;
   border-radius: 5px;
-  border-bottom: 4px solid #219882;
+  border-bottom: 4px solid #eca009;
 }
 .btn:hover, .btn:focus{
-  background-color: #25a890;
-  border-bottom: 1px solid #25a890!important;
+  background-color: #eca009;
+  border-bottom: 1px solid #eca009!important;
 }
 .svg-inline--fa{
   font-size: 20px;
